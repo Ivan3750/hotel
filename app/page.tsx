@@ -1,12 +1,15 @@
-import Image from "next/image"
-import Hero from "@/app/assets/images/hero.png"
+import HeroSection from "./components/Hero"
+import InfoBlock from "./components/InfoBlock"
+import Stats from "./components/Stats"
 
 
 const HomePage = () =>  {
  return(
-    <div className="px-[50px]">
-        <Image src={Hero} alt="Hero" />
-    </div>
+    <>
+        <HeroSection></HeroSection>
+        <InfoBlock></InfoBlock>
+        <Stats></Stats>
+    </>
  )
 }
 
